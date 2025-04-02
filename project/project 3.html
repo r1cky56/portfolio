@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Monitoring System using Raspberry Pi</title>
+    <style>
+        body {
+            font-family: consolas;
+            background-color: skyblue;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #005f73;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            text-align: left;
+            border-radius:8px;
+          }
+        section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #005f73;
+            font-size: 24px;
+        }
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        ul li, ol li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .apparatus-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .apparatus-container img {
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Temperature Monitoring System using Raspberry Pi</h1>
+    </header>
+    
+    <section id="introduction">
+        <h2>Project Overview</h2>
+        <p>This project is a Temperature Monitoring System using a Raspberry Pi, which measures and displays temperature data using a DHT11 or DHT22 sensor. The collected data can be logged and visualized on a web interface, making it a useful project for weather monitoring and IoT applications.</p>
+    </section>
+    
+    <section id="apparatus">
+        <h2>Apparatus Required</h2>
+        <div class="apparatus-container">
+            <ul>
+                <li>Raspberry Pi (any model with GPIO support)</li>
+                <li>DHT11 or DHT22 Temperature & Humidity Sensor</li>
+                <li>Resistors (10KΩ)</li>
+                <li>Jumper Wires</li>
+                <li>Breadboard</li>
+                <li>Power Supply for Raspberry Pi</li>
+                <li>Python installed on Raspberry Pi</li>
+            </ul>
+            <img src="https://content.instructables.com/FMT/DMKL/K1RVLLW2/FMTDMKLK1RVLLW2.png?auto=webp&frame=1&width=1024&fit=bounds&md=MjAxOS0xMC0xNiAxMDowMTozNS4w" alt="Temperature Monitoring System Setup">
+        </div>
+    </section>
+    
+    <section id="working">
+        <h2>How It Works</h2>
+        <p>The Raspberry Pi reads temperature and humidity data from the DHT sensor and processes it using Python scripts. The working process is as follows:</p>
+        <ol>
+            <li><strong>Sensor Initialization:</strong> The DHT sensor is connected to the Raspberry Pi’s GPIO pins.</li>
+            <li><strong>Data Collection:</strong> The Raspberry Pi reads temperature and humidity data at regular intervals.</li>
+            <li><strong>Data Processing:</strong> The collected data is processed and formatted.</li>
+            <li><strong>Output Display:</strong> The temperature and humidity data can be displayed on an LCD screen or a web interface.</li>
+            <li><strong>Data Logging:</strong> Optionally, the readings can be stored in a database for further analysis.</li>
+        </ol>
+    </section>
+
+</body>
+</html>
